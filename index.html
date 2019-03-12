@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
 	<title>time banking</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
-	
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm-6">
+	      TIME BANKING
+	    </div>
+	  </div>
+	  <div class="row">
+	  	<div class="col-sm-6">
+	  		<div id="balance">
+	  			your have <span></span> hours deposit.
+	  		</div>
+	  		<div id="service_provider"></div>
+	  		<div>Please fill your needed service and submit</div>
+			<form id="service_submit_form" onSubmit="App.request_service(); return false">
+				<label for=""> ask for help and submit!</label>
+				<input id="services" name="services" type="text">
+				<label for="">please select hours needed</label>
+				<select name="hour" id="hours_needed">
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				</select>
+				<button type="submit" class="btn btn-primary">submit</button> 
+			</form>
+	  	</div>
+	  </div>
+	  <div class="row">
+	  	<div class="col-sm-6 service_list">
+	  		
+	  	</div>
+	  </div>
+	</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

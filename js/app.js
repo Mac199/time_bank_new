@@ -42,16 +42,27 @@ App = {
 
   loadContract: async () => {
     const timeBank = await $.getJSON('build/contracts/TimeBank.json')
+    const Balance  = await $.getJSON('build/contracts/Balance.json')
     App.contracts.TimeBank = TruffleContract(timeBank)
     App.contracts.TimeBank.setProvider(App.web3Provider)
     App.timeBank = await App.contracts.TimeBank.deployed()
+    App.contracts.Balance = TruffleContract(Balance)
+    App.contracts.Balance.setProvider(App.web3Provider)
+    App.Balance = await App.contracts.Balance.deployed()
   },
   loadAccount: async () => {
     App.account = web3.eth.accounts[0]
     console.log(App.account)
   },
   init: async()=> {
-    await App.timeBank.create(0, '', 50, App.account)
+    var result = await App.Balance.hourBalance(App.account)  
+      if(!result[2]){
+        await App.Balance.initialize(App.account,50)
+      }
+      $('#balance span').html(result['1']['c'])     
+  },
+  render: async()=> {
+    
   }
 }
 
