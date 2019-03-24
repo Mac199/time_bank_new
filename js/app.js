@@ -56,13 +56,18 @@ App = {
   },
   init: async()=> {
     var result = await App.Balance.hourBalance(App.account)  
-      if(!result[2]){
-        await App.Balance.initialize(App.account,50)
-      }
-      $('#balance span').html(result['1']['c'])     
+    console.log(result)
+    if(!result[2]){
+      await App.Balance.initialize(App.account,50)
+      var result = await App.Balance.hourBalance(App.account)
+    }
+    $('#balance span').html(result['1']['c'])     
   },
   render: async()=> {
     
+  },
+  request_service: async()=> {
+    await App.timeBank.create($('#services').val(),App.account,$('#hours_needed').val())
   }
 }
 

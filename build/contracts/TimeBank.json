@@ -18,6 +18,10 @@
         {
           "name": "complete",
           "type": "bool"
+        },
+        {
+          "name": "hour",
+          "type": "uint256"
         }
       ],
       "payable": false,
@@ -35,6 +39,10 @@
         {
           "name": "_account",
           "type": "address"
+        },
+        {
+          "name": "_hour",
+          "type": "uint256"
         }
       ],
       "name": "create",
@@ -42,27 +50,27 @@
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function",
-      "signature": "0x84b47b0f"
+      "signature": "0xb5917336"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b50610442806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634bd847011461005157806384b47b0f14610126575b600080fd5b34801561005d57600080fd5b506100a06004803603602081101561007457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061020e565b604051808060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156100ea5780820151818401526020810190506100cf565b50505050905090810190601f1680156101175780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561013257600080fd5b5061020c6004803603604081101561014957600080fd5b810190808035906020019064010000000081111561016657600080fd5b82018360208201111561017857600080fd5b8035906020019184600183028401116401000000008311171561019a57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102d7565b005b6000602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102ba5780601f1061028f576101008083540402835291602001916102ba565b820191906000526020600020905b81548152906001019060200180831161029d57829003601f168201915b5050505050908060010160009054906101000a900460ff16905082565b6040805190810160405280838152602001600015158152506000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000820151816000019080519060200190610349929190610371565b5060208201518160010160006101000a81548160ff0219169083151502179055509050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103b257805160ff19168380011785556103e0565b828001600101855582156103e0579182015b828111156103df5782518255916020019190600101906103c4565b5b5090506103ed91906103f1565b5090565b61041391905b8082111561040f5760008160009055506001016103f7565b5090565b9056fea165627a7a7230582018fe258b805920f8ee744e33666cb939f8c7ad331c1f29aacd10cef7bd46d2860029",
-  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634bd847011461005157806384b47b0f14610126575b600080fd5b34801561005d57600080fd5b506100a06004803603602081101561007457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061020e565b604051808060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156100ea5780820151818401526020810190506100cf565b50505050905090810190601f1680156101175780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561013257600080fd5b5061020c6004803603604081101561014957600080fd5b810190808035906020019064010000000081111561016657600080fd5b82018360208201111561017857600080fd5b8035906020019184600183028401116401000000008311171561019a57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102d7565b005b6000602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102ba5780601f1061028f576101008083540402835291602001916102ba565b820191906000526020600020905b81548152906001019060200180831161029d57829003601f168201915b5050505050908060010160009054906101000a900460ff16905082565b6040805190810160405280838152602001600015158152506000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000820151816000019080519060200190610349929190610371565b5060208201518160010160006101000a81548160ff0219169083151502179055509050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103b257805160ff19168380011785556103e0565b828001600101855582156103e0579182015b828111156103df5782518255916020019190600101906103c4565b5b5090506103ed91906103f1565b5090565b61041391905b8082111561040f5760008160009055506001016103f7565b5090565b9056fea165627a7a7230582018fe258b805920f8ee744e33666cb939f8c7ad331c1f29aacd10cef7bd46d2860029",
-  "sourceMap": "24:248:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;24:248:2;;;;;;;",
-  "deployedSourceMap": "24:248:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;104:43;;8:9:-1;5:2;;;30:1;27;20:12;5:2;104:43:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;104:43:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;104:43:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;150:120;;8:9:-1;5:2;;;30:1;27;20:12;5:2;150:120:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;150:120:2;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;150:120:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;150:120:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;150:120:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;150:120:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;104:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;150:120::-;241:25;;;;;;;;;250:8;241:25;;;;260:5;241:25;;;;;221:7;:17;229:8;221:17;;;;;;;;;;;;;;;:45;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;150:120;;:::o;24:248::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\ncontract TimeBank {\n\tstruct Service {\n\t\tstring service;\n\t\tbool complete;\n\t}\n \t\n\tmapping (address => Service) public service;\n\tfunction create ( string memory _service, address _account) public {\n\t\tservice[_account] = Service( _service, false);\n\t}\n}\n\n\n",
+  "bytecode": "0x608060405234801561001057600080fd5b5061046b806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634bd8470114610051578063b59173361461012d575b600080fd5b34801561005d57600080fd5b506100a06004803603602081101561007457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061021f565b604051808060200184151515158152602001838152602001828103825285818151815260200191508051906020019080838360005b838110156100f05780820151818401526020810190506100d5565b50505050905090810190601f16801561011d5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561013957600080fd5b5061021d6004803603606081101561015057600080fd5b810190808035906020019064010000000081111561016d57600080fd5b82018360208201111561017f57600080fd5b803590602001918460018302840111640100000000831117156101a157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506102ee565b005b6000602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102cb5780601f106102a0576101008083540402835291602001916102cb565b820191906000526020600020905b8154815290600101906020018083116102ae57829003601f168201915b5050505050908060010160009054906101000a900460ff16908060020154905083565b606060405190810160405280848152602001600015158152602001828152506000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082015181600001908051906020019061036792919061039a565b5060208201518160010160006101000a81548160ff02191690831515021790555060408201518160020155905050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103db57805160ff1916838001178555610409565b82800160010185558215610409579182015b828111156104085782518255916020019190600101906103ed565b5b509050610416919061041a565b5090565b61043c91905b80821115610438576000816000905550600101610420565b5090565b9056fea165627a7a723058203fa502a692032235f95b8c9defa2ec7eae0f32a8dbe5232d720805f83f3d61f70029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634bd8470114610051578063b59173361461012d575b600080fd5b34801561005d57600080fd5b506100a06004803603602081101561007457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061021f565b604051808060200184151515158152602001838152602001828103825285818151815260200191508051906020019080838360005b838110156100f05780820151818401526020810190506100d5565b50505050905090810190601f16801561011d5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561013957600080fd5b5061021d6004803603606081101561015057600080fd5b810190808035906020019064010000000081111561016d57600080fd5b82018360208201111561017f57600080fd5b803590602001918460018302840111640100000000831117156101a157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506102ee565b005b6000602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102cb5780601f106102a0576101008083540402835291602001916102cb565b820191906000526020600020905b8154815290600101906020018083116102ae57829003601f168201915b5050505050908060010160009054906101000a900460ff16908060020154905083565b606060405190810160405280848152602001600015158152602001828152506000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082015181600001908051906020019061036792919061039a565b5060208201518160010160006101000a81548160ff02191690831515021790555060408201518160020155905050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103db57805160ff1916838001178555610409565b82800160010185558215610409579182015b828111156104085782518255916020019190600101906103ed565b5b509050610416919061041a565b5090565b61043c91905b80821115610438576000816000905550600101610420565b5090565b9056fea165627a7a723058203fa502a692032235f95b8c9defa2ec7eae0f32a8dbe5232d720805f83f3d61f70029",
+  "sourceMap": "24:280:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;24:280:2;;;;;;;",
+  "deployedSourceMap": "24:280:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;117:43;;8:9:-1;5:2;;;30:1;27;20:12;5:2;117:43:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;117:43:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;117:43:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;163:139;;8:9:-1;5:2;;;30:1;27;20:12;5:2;163:139:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;163:139:2;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;163:139:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;163:139:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;163:139:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;163:139:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;117:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;163:139::-;266:32;;;;;;;;;275:8;266:32;;;;285:5;266:32;;;;;;292:5;266:32;;;246:7;:17;254:8;246:17;;;;;;;;;;;;;;;:52;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;163:139;;;:::o;24:280::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\ncontract TimeBank {\n\tstruct Service {\n\t\tstring service;\n\t\tbool complete;\n\t\tuint hour;\n\t}\n \t\n\tmapping (address => Service) public service;\n\tfunction create ( string memory _service, address _account, uint _hour) public {\n\t\tservice[_account] = Service( _service, false, _hour);\n\t}\n}\n\n\n",
   "sourcePath": "/home/maclin/Documents/time_bank_new/contracts/TimeBank.sol",
   "ast": {
     "absolutePath": "/home/maclin/Documents/time_bank_new/contracts/TimeBank.sol",
     "exportedSymbols": {
       "TimeBank": [
-        161
+        175
       ]
     },
-    "id": 162,
+    "id": 176,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 134,
+        "id": 143,
         "literals": [
           "solidity",
           "^",
@@ -78,23 +86,23 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 161,
+        "id": 175,
         "linearizedBaseContracts": [
-          161
+          175
         ],
         "name": "TimeBank",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "TimeBank.Service",
-            "id": 139,
+            "id": 150,
             "members": [
               {
                 "constant": false,
-                "id": 136,
+                "id": 145,
                 "name": "service",
                 "nodeType": "VariableDeclaration",
-                "scope": 139,
+                "scope": 150,
                 "src": "64:14:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -103,7 +111,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 135,
+                  "id": 144,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "64:6:2",
@@ -117,10 +125,10 @@
               },
               {
                 "constant": false,
-                "id": 138,
+                "id": 147,
                 "name": "complete",
                 "nodeType": "VariableDeclaration",
-                "scope": 139,
+                "scope": 150,
                 "src": "82:13:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -129,7 +137,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 137,
+                  "id": 146,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "82:4:2",
@@ -140,54 +148,80 @@
                 },
                 "value": null,
                 "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 149,
+                "name": "hour",
+                "nodeType": "VariableDeclaration",
+                "scope": 150,
+                "src": "99:9:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 148,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "99:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
               }
             ],
             "name": "Service",
             "nodeType": "StructDefinition",
-            "scope": 161,
-            "src": "45:54:2",
+            "scope": 175,
+            "src": "45:67:2",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 143,
+            "id": 154,
             "name": "service",
             "nodeType": "VariableDeclaration",
-            "scope": 161,
-            "src": "104:43:2",
+            "scope": 175,
+            "src": "117:43:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$139_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$150_storage_$",
               "typeString": "mapping(address => struct TimeBank.Service)"
             },
             "typeName": {
-              "id": 142,
+              "id": 153,
               "keyType": {
-                "id": 140,
+                "id": 151,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "113:7:2",
+                "src": "126:7:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "104:28:2",
+              "src": "117:28:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$139_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$150_storage_$",
                 "typeString": "mapping(address => struct TimeBank.Service)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 141,
+                "id": 152,
                 "name": "Service",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 139,
-                "src": "124:7:2",
+                "referencedDeclaration": 150,
+                "src": "137:7:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Service_$139_storage_ptr",
+                  "typeIdentifier": "t_struct$_Service_$150_storage_ptr",
                   "typeString": "struct TimeBank.Service"
                 }
               }
@@ -197,14 +231,14 @@
           },
           {
             "body": {
-              "id": 159,
+              "id": 173,
               "nodeType": "Block",
-              "src": "217:53:2",
+              "src": "242:60:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 157,
+                    "id": 171,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -213,26 +247,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 150,
+                        "id": 163,
                         "name": "service",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 143,
-                        "src": "221:7:2",
+                        "referencedDeclaration": 154,
+                        "src": "246:7:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$139_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$150_storage_$",
                           "typeString": "mapping(address => struct TimeBank.Service storage ref)"
                         }
                       },
-                      "id": 152,
+                      "id": 165,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 151,
+                        "id": 164,
                         "name": "_account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 147,
-                        "src": "229:8:2",
+                        "referencedDeclaration": 158,
+                        "src": "254:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -243,9 +277,9 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "221:17:2",
+                      "src": "246:17:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Service_$139_storage",
+                        "typeIdentifier": "t_struct$_Service_$150_storage",
                         "typeString": "struct TimeBank.Service storage ref"
                       }
                     },
@@ -256,12 +290,12 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 154,
+                          "id": 167,
                           "name": "_service",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 145,
-                          "src": "250:8:2",
+                          "referencedDeclaration": 156,
+                          "src": "275:8:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
@@ -270,20 +304,33 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "66616c7365",
-                          "id": 155,
+                          "id": 168,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "bool",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "260:5:2",
+                          "src": "285:5:2",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           },
                           "value": "false"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 169,
+                          "name": "_hour",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 160,
+                          "src": "292:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
                         }
                       ],
                       "expression": {
@@ -295,20 +342,24 @@
                           {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
                           }
                         ],
-                        "id": 153,
+                        "id": 166,
                         "name": "Service",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 139,
-                        "src": "241:7:2",
+                        "referencedDeclaration": 150,
+                        "src": "266:7:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_Service_$139_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_Service_$150_storage_ptr_$",
                           "typeString": "type(struct TimeBank.Service storage pointer)"
                         }
                       },
-                      "id": 156,
+                      "id": 170,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -316,42 +367,42 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "241:25:2",
+                      "src": "266:32:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Service_$139_memory",
+                        "typeIdentifier": "t_struct$_Service_$150_memory",
                         "typeString": "struct TimeBank.Service memory"
                       }
                     },
-                    "src": "221:45:2",
+                    "src": "246:52:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Service_$139_storage",
+                      "typeIdentifier": "t_struct$_Service_$150_storage",
                       "typeString": "struct TimeBank.Service storage ref"
                     }
                   },
-                  "id": 158,
+                  "id": 172,
                   "nodeType": "ExpressionStatement",
-                  "src": "221:45:2"
+                  "src": "246:52:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 160,
+            "id": 174,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "create",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 148,
+              "id": 161,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 145,
+                  "id": 156,
                   "name": "_service",
                   "nodeType": "VariableDeclaration",
-                  "scope": 160,
-                  "src": "168:22:2",
+                  "scope": 174,
+                  "src": "181:22:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -359,10 +410,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 144,
+                    "id": 155,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "168:6:2",
+                    "src": "181:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -373,11 +424,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 147,
+                  "id": 158,
                   "name": "_account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 160,
-                  "src": "192:16:2",
+                  "scope": 174,
+                  "src": "205:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -385,10 +436,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 146,
+                    "id": 157,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "192:7:2",
+                    "src": "205:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -397,41 +448,67 @@
                   },
                   "value": null,
                   "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 160,
+                  "name": "_hour",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 174,
+                  "src": "223:10:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 159,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "223:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
                 }
               ],
-              "src": "166:43:2"
+              "src": "179:55:2"
             },
             "returnParameters": {
-              "id": 149,
+              "id": 162,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "217:0:2"
+              "src": "242:0:2"
             },
-            "scope": 161,
-            "src": "150:120:2",
+            "scope": 175,
+            "src": "163:139:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 162,
-        "src": "24:248:2"
+        "scope": 176,
+        "src": "24:280:2"
       }
     ],
-    "src": "0:275:2"
+    "src": "0:307:2"
   },
   "legacyAST": {
     "absolutePath": "/home/maclin/Documents/time_bank_new/contracts/TimeBank.sol",
     "exportedSymbols": {
       "TimeBank": [
-        161
+        175
       ]
     },
-    "id": 162,
+    "id": 176,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 134,
+        "id": 143,
         "literals": [
           "solidity",
           "^",
@@ -447,23 +524,23 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 161,
+        "id": 175,
         "linearizedBaseContracts": [
-          161
+          175
         ],
         "name": "TimeBank",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "TimeBank.Service",
-            "id": 139,
+            "id": 150,
             "members": [
               {
                 "constant": false,
-                "id": 136,
+                "id": 145,
                 "name": "service",
                 "nodeType": "VariableDeclaration",
-                "scope": 139,
+                "scope": 150,
                 "src": "64:14:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -472,7 +549,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 135,
+                  "id": 144,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "64:6:2",
@@ -486,10 +563,10 @@
               },
               {
                 "constant": false,
-                "id": 138,
+                "id": 147,
                 "name": "complete",
                 "nodeType": "VariableDeclaration",
-                "scope": 139,
+                "scope": 150,
                 "src": "82:13:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -498,7 +575,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 137,
+                  "id": 146,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "82:4:2",
@@ -509,54 +586,80 @@
                 },
                 "value": null,
                 "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 149,
+                "name": "hour",
+                "nodeType": "VariableDeclaration",
+                "scope": 150,
+                "src": "99:9:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 148,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "99:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
               }
             ],
             "name": "Service",
             "nodeType": "StructDefinition",
-            "scope": 161,
-            "src": "45:54:2",
+            "scope": 175,
+            "src": "45:67:2",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 143,
+            "id": 154,
             "name": "service",
             "nodeType": "VariableDeclaration",
-            "scope": 161,
-            "src": "104:43:2",
+            "scope": 175,
+            "src": "117:43:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$139_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$150_storage_$",
               "typeString": "mapping(address => struct TimeBank.Service)"
             },
             "typeName": {
-              "id": 142,
+              "id": 153,
               "keyType": {
-                "id": 140,
+                "id": 151,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "113:7:2",
+                "src": "126:7:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "104:28:2",
+              "src": "117:28:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$139_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$150_storage_$",
                 "typeString": "mapping(address => struct TimeBank.Service)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 141,
+                "id": 152,
                 "name": "Service",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 139,
-                "src": "124:7:2",
+                "referencedDeclaration": 150,
+                "src": "137:7:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Service_$139_storage_ptr",
+                  "typeIdentifier": "t_struct$_Service_$150_storage_ptr",
                   "typeString": "struct TimeBank.Service"
                 }
               }
@@ -566,14 +669,14 @@
           },
           {
             "body": {
-              "id": 159,
+              "id": 173,
               "nodeType": "Block",
-              "src": "217:53:2",
+              "src": "242:60:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 157,
+                    "id": 171,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -582,26 +685,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 150,
+                        "id": 163,
                         "name": "service",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 143,
-                        "src": "221:7:2",
+                        "referencedDeclaration": 154,
+                        "src": "246:7:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$139_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Service_$150_storage_$",
                           "typeString": "mapping(address => struct TimeBank.Service storage ref)"
                         }
                       },
-                      "id": 152,
+                      "id": 165,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 151,
+                        "id": 164,
                         "name": "_account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 147,
-                        "src": "229:8:2",
+                        "referencedDeclaration": 158,
+                        "src": "254:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -612,9 +715,9 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "221:17:2",
+                      "src": "246:17:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Service_$139_storage",
+                        "typeIdentifier": "t_struct$_Service_$150_storage",
                         "typeString": "struct TimeBank.Service storage ref"
                       }
                     },
@@ -625,12 +728,12 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 154,
+                          "id": 167,
                           "name": "_service",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 145,
-                          "src": "250:8:2",
+                          "referencedDeclaration": 156,
+                          "src": "275:8:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
@@ -639,20 +742,33 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "66616c7365",
-                          "id": 155,
+                          "id": 168,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "bool",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "260:5:2",
+                          "src": "285:5:2",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           },
                           "value": "false"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 169,
+                          "name": "_hour",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 160,
+                          "src": "292:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
                         }
                       ],
                       "expression": {
@@ -664,20 +780,24 @@
                           {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
                           }
                         ],
-                        "id": 153,
+                        "id": 166,
                         "name": "Service",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 139,
-                        "src": "241:7:2",
+                        "referencedDeclaration": 150,
+                        "src": "266:7:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_Service_$139_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_Service_$150_storage_ptr_$",
                           "typeString": "type(struct TimeBank.Service storage pointer)"
                         }
                       },
-                      "id": 156,
+                      "id": 170,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -685,42 +805,42 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "241:25:2",
+                      "src": "266:32:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Service_$139_memory",
+                        "typeIdentifier": "t_struct$_Service_$150_memory",
                         "typeString": "struct TimeBank.Service memory"
                       }
                     },
-                    "src": "221:45:2",
+                    "src": "246:52:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Service_$139_storage",
+                      "typeIdentifier": "t_struct$_Service_$150_storage",
                       "typeString": "struct TimeBank.Service storage ref"
                     }
                   },
-                  "id": 158,
+                  "id": 172,
                   "nodeType": "ExpressionStatement",
-                  "src": "221:45:2"
+                  "src": "246:52:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 160,
+            "id": 174,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "create",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 148,
+              "id": 161,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 145,
+                  "id": 156,
                   "name": "_service",
                   "nodeType": "VariableDeclaration",
-                  "scope": 160,
-                  "src": "168:22:2",
+                  "scope": 174,
+                  "src": "181:22:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -728,10 +848,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 144,
+                    "id": 155,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "168:6:2",
+                    "src": "181:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -742,11 +862,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 147,
+                  "id": 158,
                   "name": "_account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 160,
-                  "src": "192:16:2",
+                  "scope": 174,
+                  "src": "205:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -754,10 +874,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 146,
+                    "id": 157,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "192:7:2",
+                    "src": "205:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -766,28 +886,54 @@
                   },
                   "value": null,
                   "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 160,
+                  "name": "_hour",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 174,
+                  "src": "223:10:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 159,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "223:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
                 }
               ],
-              "src": "166:43:2"
+              "src": "179:55:2"
             },
             "returnParameters": {
-              "id": 149,
+              "id": 162,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "217:0:2"
+              "src": "242:0:2"
             },
-            "scope": 161,
-            "src": "150:120:2",
+            "scope": 175,
+            "src": "163:139:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 162,
-        "src": "24:248:2"
+        "scope": 176,
+        "src": "24:280:2"
       }
     ],
-    "src": "0:275:2"
+    "src": "0:307:2"
   },
   "compiler": {
     "name": "solc",
@@ -797,12 +943,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xbF0783fb7f652896e3cace2942B306150AbB9c1B",
-      "transactionHash": "0x9ec8b8af6688b430a46bd61e502fb5988869bbcdab1e1c6f7085e9327185839c"
+      "address": "0xe111A6949EBAe6c4823667670844caF3a4AFE345",
+      "transactionHash": "0xdbc423f6d82850c1895311c98a6243f88423883a7b53e38c4fcebd0b36b10d2d"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-03-12T21:49:51.485Z",
+  "updatedAt": "2019-03-24T21:52:55.386Z",
   "devdoc": {
     "methods": {}
   },
