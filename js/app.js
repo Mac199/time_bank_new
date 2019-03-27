@@ -6,6 +6,7 @@ App = {
     await App.loadContract()
     await App.loadAccount()
     await App.init()
+    await App.render()
 	},
 
   loadWeb3: async () => {
@@ -52,11 +53,9 @@ App = {
   },
   loadAccount: async () => {
     App.account = web3.eth.accounts[0]
-    console.log(App.account)
   },
   init: async()=> {
     var result = await App.Balance.hourBalance(App.account)  
-    console.log(result)
     if(!result[2]){
       await App.Balance.initialize(App.account,50)
       var result = await App.Balance.hourBalance(App.account)
@@ -64,7 +63,11 @@ App = {
     $('#balance span').html(result['1']['c'])     
   },
   render: async()=> {
-    
+    var result = await App.Balance.getUserAccounts()
+    for(var i =0; i< result.length; i++){
+      var service = await App.timeBank.service(result[i])
+      $('.service_list ul').append('<li class='+result[i]+'>'+result[i]+'<span> '+ service[0]+'</span>'+'<button id="give_help" class="btn btn-primary">give help</button>'+'</li>')
+    }
   },
   request_service: async()=> {
     await App.timeBank.create($('#services').val(),App.account,$('#hours_needed').val())

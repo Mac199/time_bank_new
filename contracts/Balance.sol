@@ -16,5 +16,8 @@ contract Balance {
     require (hourBalance[msg.sender].amount > _hours); 
     hourBalance[msg.sender].amount = hourBalance[msg.sender].amount - _hours;
     hourBalance[_worker].amount = hourBalance[_worker].amount + _hours;
-  }        
+  }
+  function getUserAccounts() public view returns(address[] memory) {
+    return userAccounts;
+  }   
 }
