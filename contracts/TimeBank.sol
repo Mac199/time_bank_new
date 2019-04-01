@@ -4,11 +4,18 @@ contract TimeBank {
 		string service;
 		bool complete;
 		uint hour;
+		address serviceProvider;
 	}
  	
 	mapping (address => Service) public service;
-	function create ( string memory _service, address _account, uint _hour) public {
-		service[_account] = Service( _service, false, _hour);
+	function create ( string memory _service, address _account, uint _hour, address _provider) public {
+		service[_account] = Service( _service, false, _hour, _provider);
+	}
+	function setServiceProvider(address _account, address _provider) public{
+		service[_account].serviceProvider = _provider;
+	}
+	function resetService() public {
+		
 	}
 }
 

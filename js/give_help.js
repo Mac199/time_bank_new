@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-
   $(document).on('click', '#give_help', function(){
-  	$(this).parent().attr('class')
-  	
+  	var account = $(this).parent().attr('class')
+  	App.timeBank.setServiceProvider(account, $("#user").html())
+  	$('.'+account).hide()
   });
 })

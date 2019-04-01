@@ -53,6 +53,7 @@ App = {
   },
   loadAccount: async () => {
     App.account = web3.eth.accounts[0]
+    $("#user").html(App.account)
   },
   init: async()=> {
     var result = await App.Balance.hourBalance(App.account)  
@@ -63,15 +64,33 @@ App = {
     $('#balance span').html(result['1']['c'])     
   },
   render: async()=> {
+    var service_provider = await App.timeBank.service(App.account)
+    if(service_provider[3] != 0){
+      $("#service_provider").html("<span id='worker_id'>"+service_provider[3]+"</span>"+" wants to help you "+"<button class='btn btn-primary' id='check' onclick='App.check()'>check<button>")
+    }
+
     var result = await App.Balance.getUserAccounts()
     for(var i =0; i< result.length; i++){
-      var service = await App.timeBank.service(result[i])
-      $('.service_list ul').append('<li class='+result[i]+'>'+result[i]+'<span> '+ service[0]+'</span>'+'<button id="give_help" class="btn btn-primary">give help</button>'+'</li>')
+      if(result[i] != App.account){
+        var service = await App.timeBank.service(result[i])
+        if(service[0] != ''){
+          $('.service_list ul').append('<li class='+result[i]+'>'+result[i]+'<span> '+ service[0]+'</span>'+'<button id="give_help" class="btn btn-primary">give help</button>'+'</li>')
+        }
+      }
+      
     }
   },
   request_service: async()=> {
-    await App.timeBank.create($('#services').val(),App.account,$('#hours_needed').val())
-  }
+    await App.timeBank.create($('#services').val(),App.account,$('#hours_needed').val(),'')
+  },
+  check: async()=>{
+    var services = await App.timeBank.service(App.account)
+    console.log(services)
+    var hours = services[2]['c'][0]
+    var worker = services[3]
+    await App.Balance.changeBalance(hours, worker)
+    $('#service_provider').html('')
+  },
 }
 
 $(() => {
