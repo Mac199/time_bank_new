@@ -66,7 +66,7 @@ App = {
   render: async()=> {
     var service_provider = await App.timeBank.service(App.account)
     if(service_provider[3] != 0){
-      $("#service_provider").html("<span id='worker_id'>"+service_provider[3]+"</span>"+" wants to help you "+"<button class='btn btn-primary' id='check' onclick='App.check()'>check<button>")
+      $("#service_provider").html("<span id='worker_id'>"+service_provider[3]+"</span>"+" wants to help you "+"<button class='btn btn-primary' id='check' onclick='App.check()'>check</button>")
     }
 
     var result = await App.Balance.getUserAccounts()
@@ -74,7 +74,7 @@ App = {
       if(result[i] != App.account){
         var service = await App.timeBank.service(result[i])
         if(service[0] != ''){
-          $('.service_list ul').append('<li class='+result[i]+'>'+result[i]+'<span> '+ service[0]+'</span>'+'<button id="give_help" class="btn btn-primary">give help</button>'+'</li>')
+          $('.service_list ul').append('<li class='+result[i]+'>'+result[i]+'<span> '+ service[0]+'</span>'+' <button id="give_help" class="btn btn-primary">give help</button>'+'</li>')
         }
       }
       
@@ -90,6 +90,7 @@ App = {
     var worker = services[3]
     await App.Balance.changeBalance(hours, worker)
     $('#service_provider').html('')
+    await App.timeBank.resetService(App.account)
   },
 }
 

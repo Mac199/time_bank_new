@@ -14,8 +14,8 @@ contract TimeBank {
 	function setServiceProvider(address _account, address _provider) public{
 		service[_account].serviceProvider = _provider;
 	}
-	function resetService() public {
-		
+	function resetService(address _account) public {
+		service[_account] = Service('',false,0,0x0000000000000000000000000000000000000000);
 	}
 }
 
