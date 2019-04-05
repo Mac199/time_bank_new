@@ -85,12 +85,12 @@ App = {
   },
   check: async()=>{
     var services = await App.timeBank.service(App.account)
-    console.log(services)
     var hours = services[2]['c'][0]
     var worker = services[3]
     await App.Balance.changeBalance(hours, worker)
     $('#service_provider').html('')
     await App.timeBank.resetService(App.account)
+    App.init()
   },
 }
 

@@ -1,0 +1,5 @@
+.service_list ul li span{
+	display: inline-block;
+    background-color: #ff9900;   
+    border-radius: 5%;
+}
