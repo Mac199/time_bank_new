@@ -1963,12 +1963,18 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x613CB07ba62BAbB60D4E0792c0F477A19A3307e4",
-      "transactionHash": "0xb097e230d4e22230dcf2e150028ae94eaa31ec9b671a6cfc5bec84a9c3e85ac7"
+      "address": "0xDa58Ee457FB03265e8742A4c26B94FB006f6994B",
+      "transactionHash": "0xda00e12f558720152c711c5f73966c1ec0c6a4b065db57e13f8b88285881c99c"
+    },
+    "58343": {
+      "events": {},
+      "links": {},
+      "address": "0xAB60e960f2B71EeABC80c6e28AeFF688183167fa",
+      "transactionHash": "0x32790815efff6c4f7642f0288f00ee1225a10e975a2210292a54befd9a905741"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-04-02T22:06:06.484Z",
+  "updatedAt": "2019-04-16T15:49:23.737Z",
   "devdoc": {
     "methods": {}
   },
